@@ -1,0 +1,32 @@
+source(findFile("scripts", "Scenario.js"));
+
+// Scenario 1
+var scenario1 = new Scenario("Initial state of created addressbook");
+
+scenario1.given("no prior existing addressbook", function () {
+   test.log("Implement me!");
+})
+
+scenario1.when("I create a new addressbook", function () {
+   test.log("Implement me!");
+})
+
+scenario1.then("no entries should be present", function () {
+   test.log("Implement me!");
+})
+
+// Scenario 2
+var scenario2 = new Scenario("State after adding first entry");
+
+scenario2.given("a newly created addressbok", function () {
+   test.log("Implement me!");
+})
+
+scenario2.when("entering the first person", function () {
+   test.log("Implement me!");
+})
+
+scenario2.then("one entry should be present", function () {
+   test.log("Implement me!");
+})
+

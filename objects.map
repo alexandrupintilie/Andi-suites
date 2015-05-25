@@ -1,0 +1,157 @@
+:B.backgroundRec_Rectangle	{container=':B_ChatWindow' id='backgroundRec' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:B.backgroundRect_Rectangle	{container=':B_ChatWindow' id='backgroundRect' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:B.ctPlusButton_IconButton	{container=':B_ChatWindow' objectName='ctPlusButton' type='IconButton' visible='true'}
+:B.ctPlusButton_IconButton_2	{container=':B_ChatWindow' objectName='ctPlusButton' type='IconButton' visible='true'}
+:B.cvtaTextEditor_TextEditor	{container=':B_ChatWindow' objectName='cvtaTextEditor' type='TextEditor' visible='true'}
+:B.listView_ListView	{container=':B_ChatWindow' id='listView' occurrence='2' type='ListView' unnamed='1' visible='true'}
+:B.panelLoader_Loader	{container=':B_ChatWindow' id='panelLoader' occurrence='3' type='Loader' unnamed='1' visible='true'}
+:B_ChatWindow	{title='B' type='ChatWindow' unnamed='1' visible='true'}
+:B_QTipLabel	{name='qtooltip_label' text='B' type='QTipLabel' visible='1'}
+:Choose Contact.Cancel_CustomFocusButton	{text='Cancel' type='CustomFocusButton' unnamed='1' visible='1' window=':Choose Contact_ChooseContactsDialog'}
+:Choose Contact.Send_CustomFocusButton	{text='Send' type='CustomFocusButton' unnamed='1' visible='1' window=':Choose Contact_ChooseContactsDialog'}
+:Choose Contact.contactsList_ContactListView	{name='contactsList' type='ContactListView' visible='1' window=':Choose Contact_ChooseContactsDialog'}
+:Choose Contact_ChooseContactsDialog	{name='ChooseContactsDialog' type='ChooseContactsDialog' visible='1' windowTitle='Choose Contact'}
+:Contact Profile.Close_CustomFocusButton	{text='Close' type='CustomFocusButton' unnamed='1' visible='1' window=':Contact Profile_profile::ProfileDialog'}
+:Contact Profile.profileScrollArea_QScrollArea	{name='profileScrollArea' type='QScrollArea' visible='1' window=':Contact Profile_profile::ProfileDialog'}
+:Contact Profile_profile::ProfileDialog	{name='ProfileDialog' type='profile::ProfileDialog' visible='1' windowTitle='Contact Profile'}
+:Delete entire conversation.Delete_CustomFocusButton	{text='Delete' type='CustomFocusButton' unnamed='1' visible='1' window=':Delete entire conversation_WoowMessageBox'}
+:Delete entire conversation_WoowMessageBox	{name='WoowMessageBox' type='WoowMessageBox' visible='1' windowTitle='Delete entire conversation'}
+:EARLIER ACTIVITY.B_QModelIndex	{column='0' container=':activityTreeView.EARLIER ACTIVITY_QModelIndex' text='B' type='QModelIndex'}
+:Microphone - Set up your microphone.micCombo_QComboBox	{container=':Welcome to WowApp.Microphone - Set up your microphone_QGroupBox' name='micCombo' type='QComboBox' visible='1'}
+:NewName	{}
+:NewName1	{}
+:NewName2	{}
+:NewName3	{}
+:Please select which servers do you wish to connect to:_QComboBox	{buddy=':Servers.Please select which servers do you wish to connect to:_QLabel' type='QComboBox' unnamed='1' visible='1'}
+:Preferences.mainStack_QStackedWidget	{name='mainStack' type='QStackedWidget' visible='0' window=':Preferences_SettingsWidget_2'}
+:Preferences_SettingsWidget	{name='SettingsWidget' type='SettingsWidget' visible='1' windowTitle='Preferences'}
+:Preferences_SettingsWidget_2	{name='SettingsWidget' type='SettingsWidget' visible='0' windowTitle='Preferences'}
+:Save group in contact list.Save_CustomFocusButton	{text='Save' type='CustomFocusButton' unnamed='1' visible='1' window=':Save group in contact list_SaveGroupChatDialog'}
+:Save group in contact list.groupsComboBox_QComboBox	{name='groupsComboBox' type='QComboBox' visible='1' window=':Save group in contact list_SaveGroupChatDialog'}
+:Save group in contact list_SaveGroupChatDialog	{name='SaveGroupChatDialog' type='SaveGroupChatDialog' visible='1' windowTitle='Save group in contact list'}
+:Send Bug / Feedback.Cancel_CustomFocusButton	{name='cancelButton' text='Cancel' type='CustomFocusButton' visible='1' window=':Send Bug / Feedback_ReportTypeDialog'}
+:Send Bug / Feedback_ReportTypeDialog	{name='ReportTypeDialog' type='ReportTypeDialog' visible='1' windowTitle='Send Bug / Feedback'}
+:Send File_QFileDialog	{type='QFileDialog' unnamed='1' visible='0' windowTitle='Send File'}
+:Servers.OK_QPushButton	{text='OK' type='QPushButton' unnamed='1' visible='1' window=':Servers_QInputDialog'}
+:Servers.Please select which servers do you wish to connect to:_QLabel	{text='Please select which servers do you wish to connect to:' type='QLabel' unnamed='1' visible='1' window=':Servers_QInputDialog'}
+:Servers_QInputDialog	{type='QInputDialog' unnamed='1' visible='1' windowTitle='Servers'}
+:Status.awayMinutesInput_QSpinBox	{container=':mainStack.Status_QGroupBox' name='awayMinutesInput' type='QSpinBox' visible='0'}
+:TODAY.B_QModelIndex	{column='0' container=':activityTreeView.TODAY_QModelIndex' text='B' type='QModelIndex'}
+:TODAY.plcata2001 a_QModelIndex	{column='0' container=':activityTreeView.TODAY_QModelIndex' text='plcata2001 a' type='QModelIndex'}
+:TitleBar_DockRosterButton_CustomToolButton	{name='TitleBar_DockRosterButton' type='CustomToolButton' visible='0'}
+:Welcome to WowApp.Microphone - Set up your microphone_QGroupBox	{name='micGroupBox' title='Microphone - Set up your microphone' type='QGroupBox' visible='1' window=':Welcome to WowApp_OnboardingDialog'}
+:Welcome to WowApp.WowApp_QMenu	{title='WowApp' type='QMenu' unnamed='1' visible='1' window=':Welcome to WowApp_LoginDialog'}
+:Welcome to WowApp.contentStackedWidget_QStackedWidget	{name='contentStackedWidget' type='QStackedWidget' visible='1' window=':Welcome to WowApp_LoginDialog'}
+:Welcome to WowApp_LoginDialog	{type='LoginDialog' unnamed='1' visible='1' windowTitle='Welcome to WowApp'}
+:Welcome to WowApp_OnboardingDialog	{name='OnboardingDialog' type='OnboardingDialog' visible='1' windowTitle='Welcome to WowApp'}
+:Welcome to WowApp_WowMenuBar	{type='WowMenuBar' unnamed='1' visible='1' window=':Welcome to WowApp_LoginDialog'}
+:WoowMessageBox.Accept_CustomFocusButton	{text='Accept' type='CustomFocusButton' unnamed='1' visible='1' window=':WoowMessageBox_WoowMessageBox'}
+:WoowMessageBox.Cancel_CustomFocusButton	{text='Cancel' type='CustomFocusButton' unnamed='1' visible='1' window=':WoowMessageBox_WoowMessageBox'}
+:WoowMessageBox.Do you want to start a private conversation?_QLabel	{container=':plcata2001 a_ChatWindow' id='dialogBox' radius='4' type='Rectangle' unnamed='1' visible='true'}
+:WoowMessageBox.OK_CustomFocusButton	{text='OK' type='CustomFocusButton' unnamed='1' visible='1' window=':WoowMessageBox_WoowMessageBox'}
+:WoowMessageBox.Sign Out_CustomFocusButton	{text='Sign Out' type='CustomFocusButton' unnamed='1' visible='1' window=':WoowMessageBox_WoowMessageBox'}
+:WoowMessageBox.buttonBox_QDialogButtonBox	{name='buttonBox' type='QDialogButtonBox' visible='1' window=':WoowMessageBox_WoowMessageBox'}
+:WoowMessageBox_WoowMessageBox	{name='WoowMessageBox' type='WoowMessageBox' visible='1'}
+:WowApp.17 <img src=":/roster/envelope.svg" />_QLabel	{name='valueLabel' text='17 <img src=":/roster/envelope.svg" />' type='QLabel' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.Activity_TabRadioButton	{name='activityRadioButton' text='Activity' type='TabRadioButton' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.Contacts_TabRadioButton	{name='contactsRadioButton' text='Contacts' type='TabRadioButton' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.File_QMenu	{name='menuWoow' title='File' type='QMenu' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.Help_QMenu	{name='menuHelp' title='Help' type='QMenu' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.WowApp_QMenu	{name='menuWoow' title='WowApp' type='QMenu' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.WowApp_QMenu_2	{name='menuWoow' title='WowApp' type='QMenu' visible='0' window=':WowApp_RosterWindow'}
+:WowApp.contentStackedWidget_QStackedWidget	{name='contentStackedWidget' type='QStackedWidget' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.mainTabHolderWidget_QWidget	{name='mainTabHolderWidget' type='QWidget' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.menubar_WowMenuBar	{name='menubar' type='WowMenuBar' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.splitter_QSplitter	{name='splitter' type='QSplitter' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.stackedWidget_QStackedWidget	{name='stackedWidget' type='QStackedWidget' visible='1' window=':WowApp_RosterWindow'}
+:WowApp_QMenu	{type='QMenu' unnamed='1' visible='1' window=':WowApp_RosterWindow'}
+:WowApp_RosterWindow	{name='RosterWindow' type='RosterWindow' visible='1' windowTitle='WowApp'}
+:_SystemTray	{type='SystemTray'}
+:activityScrollArea.activityTreeView_ActivityTreeView	{container=':activityStackedWidget.activityScrollArea_QScrollArea' name='activityTreeView' type='ActivityTreeView' visible='1'}
+:activityStackedWidget.activityScrollArea_QScrollArea	{container=':contentStackedWidget.activityStackedWidget_QStackedWidget' name='activityScrollArea' type='QScrollArea' visible='1'}
+:activityTreeView.EARLIER ACTIVITY_QModelIndex	{column='0' container=':activityScrollArea.activityTreeView_ActivityTreeView' text='EARLIER ACTIVITY' type='QModelIndex'}
+:activityTreeView.TODAY_QModelIndex	{column='0' container=':activityScrollArea.activityTreeView_ActivityTreeView' text='TODAY' type='QModelIndex'}
+:cata100 ionut100_ChatWindow	{title='cata100 ionut100' type='ChatWindow' unnamed='1' visible='true'}
+:chatsStackedWidget_QWindowContainer	{container=':contentStackedWidget.chatsStackedWidget_QStackedWidget' type='QWindowContainer' unnamed='1' visible='1'}
+:contactsList_QScrollBar	{container=':Choose Contact.contactsList_ContactListView' type='QScrollBar' unnamed='1' visible='1'}
+:contentStackedWidget.Sign in_CustomFocusButton	{container=':Welcome to WowApp.contentStackedWidget_QStackedWidget' name='loginButton' text='Sign in' type='CustomFocusButton' visible='1'}
+:contentStackedWidget.activityStackedWidget_QStackedWidget	{container=':WowApp.contentStackedWidget_QStackedWidget' name='activityStackedWidget' type='QStackedWidget' visible='1'}
+:contentStackedWidget.chatsStackedWidget_QStackedWidget	{container=':WowApp.contentStackedWidget_QStackedWidget' name='chatsStackedWidget' type='QStackedWidget' visible='1'}
+:contentStackedWidget.fieldLineEdit_QLineEdit	{container=':Welcome to WowApp.contentStackedWidget_QStackedWidget' name='fieldLineEdit' occurrence='2' type='QLineEdit' visible='1'}
+:contentStackedWidget.fieldLineEdit_QLineEdit_2	{container=':Welcome to WowApp.contentStackedWidget_QStackedWidget' name='fieldLineEdit' occurrence='2' type='QLineEdit' visible='1'}
+:contentStackedWidget.fieldLineEdit_QLineEdit_3	{container=':Welcome to WowApp.contentStackedWidget_QStackedWidget' name='fieldLineEdit' type='QLineEdit' visible='1'}
+:contentStackedWidget.pageLogin_QWidget	{container=':Welcome to WowApp.contentStackedWidget_QStackedWidget' name='pageLogin' type='QWidget' visible='1'}
+:contentStackedWidget.rosterScrollArea_QScrollArea	{container=':WowApp.contentStackedWidget_QStackedWidget' name='rosterScrollArea' type='QScrollArea' visible='1'}
+:cvtaTextEditor.Type message here_Text	{container=':plcata2001 a.cvtaTextEditor_TextEditor' id='placeHolderText' text='Type message here' type='Text' unnamed='1' visible='true'}
+:cvtaTextEditor.edit_TextEdit	{container=':plcata2001 a.cvtaTextEditor_TextEditor' id='placeHolderText' text='Type message here' type='Text' unnamed='1' visible='true'}
+:cvtaTextEditor.edit_TextEdit_2	{container=':plcata2001 a.cvtaTextEditor_TextEditor' id='placeHolderText' text='Type message here' type='Text' unnamed='1' visible='true'}
+:cvtaTextEditor.edit_TextEdit_3	{container=':plcata2000 a.cvtaTextEditor_TextEditor' id='edit' type='TextEdit' unnamed='1' visible='true'}
+:cvtaTextEditor.edit_TextEdit_4	{container=':plcata2001 a.cvtaTextEditor_TextEditor' id='edit' type='TextEdit' unnamed='1' visible='true'}
+:delegateLoader.Algeria,_Text	{container=':listView.delegateLoader_Loader_3' id='locationText' text='Algeria,' type='Text' unnamed='1' visible='true'}
+:delegateLoader.Algeria,_Text_2	{container=':listView.delegateLoader_Loader_5' id='locationText' text='Algeria,' type='Text' unnamed='1' visible='true'}
+:delegateLoader.Daniel Finti_Text	{container=':listView.delegateLoader_Loader' id='nameText' text='Daniel Finti' type='Text' unnamed='1' visible='true'}
+:delegateLoader.Romania,Bucharest_Text	{container=':listView.delegateLoader_Loader_10' id='locationText' text='Romania,Bucharest' type='Text' unnamed='1' visible='true'}
+:delegateLoader.Seen at 1:12 PM_Text	{container=':listView.delegateLoader_Loader_8' id='notificationLabel' text='Seen at 1:12 PM' type='Text' unnamed='1' visible='true'}
+:delegateLoader.avatarIcon_Image	{container=':listView.delegateLoader_Loader_4' id='avatarIcon' source='image://masked-avatars/accountId=59d8f520-8448-11e4-a2a3-cf70b5e21e57&jid=wooow22@woow.com&avatarId=0&avatarSide=44&useDefaultMargins=false&showPresence=false' type='Image' unnamed='1' visible='true'}
+:delegateLoader.avatarIcon_Image_2	{container=':listView.delegateLoader_Loader_2' id='avatarIcon' source='image://masked-avatars/accountId=59d8f520-8448-11e4-a2a3-cf70b5e21e57&jid=wooow22@woow.com&avatarId=0&avatarSide=44&useDefaultMargins=false&showPresence=false' type='Image' unnamed='1' visible='true'}
+:delegateLoader.avatarIcon_Image_3	{container=':listView.delegateLoader_Loader_10' id='avatarIcon' source='image://masked-avatars/accountId=68378c20-b424-11e3-be52-237cbee23ed9&jid=pl.cata100@woow.com&avatarId=9410273345537&avatarSide=44&useDefaultMargins=false&showPresence=false' type='Image' unnamed='1' visible='true'}
+:delegateLoader.bigThumbnail_Image	{container=':listView.delegateLoader_Loader_8' id='bigThumbnail' source='image://fileicons/frame/72f4ce80-c0d9-11e4-9c16-237cbee23ed9pl.cata2001@woow.comkYrHjtree.jpg&cb=0' type='Image' unnamed='1' visible='true'}
+:delegateLoader.cata100 ionut100_Text	{container=':listView.delegateLoader_Loader_8' id='nameText' text='cata100 ionut100' type='Text' unnamed='1' visible='true'}
+:delegateLoader.cfdOpenButton_Button	{container=':listView.delegateLoader_Loader_8' objectName='cfdOpenButton' radius='4' type='Button' visible='true'}
+:delegateLoader.cfdOpenLocationButton_Button	{container=':listView.delegateLoader_Loader_8' objectName='cfdOpenLocationButton' radius='4' type='Button' visible='true'}
+:delegateLoader.itemContent_Rectangle	{container=':listView.delegateLoader_Loader_3' id='itemContent' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:delegateLoader.itemContent_Rectangle_2	{container=':listView.delegateLoader_Loader_2' id='itemContent' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:delegateLoader.itemContent_Rectangle_3	{container=':listView.delegateLoader_Loader_7' id='itemContent' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:delegateLoader.itemContent_Rectangle_4	{container=':listView.delegateLoader_Loader_8' id='itemContent' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:delegateLoader.messageLabel_TextEdit	{container=':listView.delegateLoader_Loader_9' id='messageLabel' type='TextEdit' unnamed='1' visible='true'}
+:delegateLoader.messageLabel_TextEdit_2	{container=':listView.delegateLoader_Loader_8' id='messageLabel' type='TextEdit' unnamed='1' visible='true'}
+:delegateLoader.onlineStatusIcon_Image	{container=':listView.delegateLoader_Loader_3' id='onlineStatusIcon' source='image://presenceicons/wooow22@woow.com' type='Image' unnamed='1' visible='true'}
+:delegateLoader.wooow22 a_Text	{container=':listView.delegateLoader_Loader_6' id='nameText' text='wooow22 a' type='Text' unnamed='1' visible='true'}
+:delegateLoader.wooow22 a_Text_2	{container=':listView.delegateLoader_Loader_2' id='nameText' text='wooow22 a' type='Text' unnamed='1' visible='true'}
+:delegateLoader_NotificationLabel	{container=':listView.delegateLoader_Loader_2' type='NotificationLabel' unnamed='1' visible='true'}
+:detailsWidget.propertyTreeView_QTreeView	{container=':profileScrollArea.detailsWidget_QStackedWidget' name='propertyTreeView' type='QTreeView' visible='1'}
+:listView.delegateLoader_Loader	{container=':B.listView_ListView' id='delegateLoader' occurrence='3' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_10	{container=':plcata2001 a.listView_ListView' id='delegateLoader' occurrence='9' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_2	{container=':B.listView_ListView' id='delegateLoader' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_3	{container=':B.listView_ListView' id='delegateLoader' occurrence='10' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_4	{container=':B.listView_ListView' id='delegateLoader' occurrence='8' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_5	{container=':B.listView_ListView' id='delegateLoader' occurrence='4' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_6	{container=':B.listView_ListView' id='delegateLoader' occurrence='2' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_7	{container=':plcata2001 a.listView_ListView' id='delegateLoader' occurrence='3' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_8	{container=':plcata2001 a.listView_ListView' id='delegateLoader' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_9	{container=':plcata2001 a.listView_ListView' id='delegateLoader' occurrence='8' type='Loader' unnamed='1' visible='true'}
+:mainStack.Status_QGroupBox	{container=':Preferences.mainStack_QStackedWidget' name='groupBox_11' title='Status' type='QGroupBox' visible='0'}
+:plcata2000 a.Go Private_IconButton	{container=':plcata2000 a_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}
+:plcata2000 a.cvtaTextEditor_TextEditor	{container=':plcata2000 a_ChatWindow' objectName='cvtaTextEditor' type='TextEditor' visible='true'}
+:plcata2000 a_ChatWindow	{title='plcata2000 a' type='ChatWindow' unnamed='1' visible='true'}
+:plcata2001 a.<html>You are now in a Private Chat.<br/><br/>All messages, images, videos and files shared in a Private Chat are secure and disappear once this mode is turned off or after 30 minutes of inactivity.<br/><br/>Enjoy full privacy: no trace of this conversation is stored on any device as well as our servers.</html>_Text	{container=':plcata2001 a_ChatWindow' text='<html>You are now in a Private Chat.<br/><br/>All messages, images, videos and files shared in a Private Chat are secure and disappear once this mode is turned off or after 30 minutes of inactivity.<br/><br/>Enjoy full privacy: no trace of this conversation is stored on any device as well as our servers.</html>' type='Text' unnamed='1' visible='true'}
+:plcata2001 a.Accept_Text	{container=':plcata2001 a_ChatWindow' id='buttonText' text='Accept' type='Text' unnamed='1' visible='true'}
+:plcata2001 a.Go Private_IconButton	{container=':plcata2001 a_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}
+:plcata2001 a.Offline_Text	{container=':plcata2001 a_ChatWindow' id='presenceMsgCtrl' text='Offline' type='Text' unnamed='1' visible='true'}
+:plcata2001 a.Private is ON_IconButton	{container=':plcata2001 a_ChatWindow' objectName='privateButton' text='Private is ON' type='IconButton' visible='true'}
+:plcata2001 a.acceptButton_Button	{container=':plcata2001 a_ChatWindow' id='acceptButton' radius='4' type='Button' unnamed='1' visible='true'}
+:plcata2001 a.backgroundRec_Rectangle	{container=':plcata2001 a_ChatWindow' id='backgroundRec' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:plcata2001 a.backgroundRect_Rectangle	{container=':plcata2001 a_ChatWindow' id='backgroundRect' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:plcata2001 a.cancelButton_Button	{container=':plcata2001 a_ChatWindow' id='cancelButton' radius='4' type='Button' unnamed='1' visible='true'}
+:plcata2001 a.ctDockButton_IconButton	{container=':plcata2001 a_ChatWindow' objectName='ctDockButton' occurrence='2' type='IconButton' visible='true'}
+:plcata2001 a.ctDockButton_IconButton_2	{container=':plcata2001 a_ChatWindow' objectName='ctDockButton' occurrence='2' type='IconButton' visible='true'}
+:plcata2001 a.ctDockButton_IconButton_3	{container=':plcata2001 a_ChatWindow' objectName='ctDockButton' type='IconButton' visible='true'}
+:plcata2001 a.ctPlusButton_IconButton	{container=':plcata2001 a_ChatWindow' objectName='ctPlusButton' type='IconButton' visible='true'}
+:plcata2001 a.cvtaTextEditor_TextEditor	{container=':plcata2001 a_ChatWindow' objectName='cvtaTextEditor' type='TextEditor' visible='true'}
+:plcata2001 a.listView_ListView	{container=':plcata2001 a_ChatWindow' id='listView' type='ListView' unnamed='1' visible='true'}
+:plcata2001 a.messageBox_OverlayMessageBox	{container=':plcata2001 a_ChatWindow' id='messageBox' radius='0' type='OverlayMessageBox' unnamed='1' visible='true'}
+:plcata2001 a.panelLoader_Loader	{container=':plcata2001 a_ChatWindow' id='panelLoader' occurrence='5' type='Loader' unnamed='1' visible='true'}
+:plcata2001 a.textArea_ChatViewTextArea	{container=':plcata2001 a_ChatWindow' id='textArea' source='qrc:/chat/common/lower_panel_chat_dark_gray_gradient_4x89.png' type='ChatViewTextArea' unnamed='1' visible='true'}
+:plcata2001 a.textArea_ChatViewTextArea_2	{container=':plcata2001 a_ChatWindow' id='textArea' source='qrc:/chat/common/lower_panel_chat_gray_gradient_4x86.png' type='ChatViewTextArea' unnamed='1' visible='true'}
+:plcata2001 a.textInput_TextInputWithHandles	{container=':plcata2001 a_ChatWindow' echoMode='0' id='textInput' type='TextInputWithHandles' unnamed='1' visible='true'}
+:plcata2001 a_ChatWindow	{title='plcata2001 a' type='ChatWindow' unnamed='1' visible='true'}
+:plcata2001 a_ChatWindow_2	{container=':chatsStackedWidget_QWindowContainer' title='plcata2001 a' type='ChatWindow' unnamed='1' visible='true'}
+:plcata2001 a_QTipLabel	{name='qtooltip_label' text='plcata2001 a' type='QTipLabel' visible='1'}
+:plcata2001 a_Rectangle	{container=':plcata2001 a_ChatWindow' occurrence='12' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:profileScrollArea.detailsWidget_QStackedWidget	{container=':Contact Profile.profileScrollArea_QScrollArea' name='detailsWidget' type='QStackedWidget' visible='1'}
+:propertyTreeView.stackedWidget_QStackedWidget	{container=':detailsWidget.propertyTreeView_QTreeView' name='stackedWidget' occurrence='5' type='QStackedWidget' visible='1'}
+:rosterScrollArea.rosterTreeView_RosterTreeView	{container=':contentStackedWidget.rosterScrollArea_QScrollArea' name='rosterTreeView' type='RosterTreeView' visible='1'}
+:rosterScrollArea_QScrollBar	{container=':contentStackedWidget.rosterScrollArea_QScrollArea' type='QScrollBar' unnamed='1' visible='1'}
+:stackedWidget.Female_LinkLabel	{container=':propertyTreeView.stackedWidget_QStackedWidget' name='textLabel' text='Female' type='LinkLabel' visible='1'}
+:stackedWidget.pageView_QWidget	{container=':stackedWidget.stackedWidget_QStackedWidget' name='pageView' type='QWidget' visible='1'}
+:stackedWidget.stackedWidget_QStackedWidget	{container=':WowApp.stackedWidget_QStackedWidget' name='stackedWidget' type='QStackedWidget' visible='1'}
