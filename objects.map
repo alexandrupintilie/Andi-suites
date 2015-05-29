@@ -1,3 +1,7 @@
+:Add to Conference.Add to Conference_CustomFocusButton	{name='startConferenceButton' text='Add to Conference' type='CustomFocusButton' visible='1' window=':Add to Conference_AddToConferenceDialog'}
+:Add to Conference.availableContactsList_ContactListView	{name='availableContactsList' type='ContactListView' visible='1' window=':Add to Conference_AddToConferenceDialog'}
+:Add to Conference.searchLineEdit_SearchLineEdit	{name='searchLineEdit' type='SearchLineEdit' visible='1' window=':Add to Conference_AddToConferenceDialog'}
+:Add to Conference_AddToConferenceDialog	{name='AddToConferenceDialog' type='AddToConferenceDialog' visible='1' windowTitle='Add to Conference'}
 :B.backgroundRec_Rectangle	{container=':B_ChatWindow' id='backgroundRec' radius='0' type='Rectangle' unnamed='1' visible='true'}
 :B.backgroundRect_Rectangle	{container=':B_ChatWindow' id='backgroundRect' radius='0' type='Rectangle' unnamed='1' visible='true'}
 :B.ctPlusButton_IconButton	{container=':B_ChatWindow' objectName='ctPlusButton' type='IconButton' visible='true'}
@@ -22,6 +26,8 @@
 :NewName1	{}
 :NewName2	{}
 :NewName3	{}
+:NewName4	{}
+:NewName5	{}
 :Please select which servers do you wish to connect to:_QComboBox	{buddy=':Servers.Please select which servers do you wish to connect to:_QLabel' type='QComboBox' unnamed='1' visible='1'}
 :Preferences.mainStack_QStackedWidget	{name='mainStack' type='QStackedWidget' visible='0' window=':Preferences_SettingsWidget_2'}
 :Preferences_SettingsWidget	{name='SettingsWidget' type='SettingsWidget' visible='1' windowTitle='Preferences'}
@@ -64,6 +70,7 @@
 :WowApp.menubar_WowMenuBar	{name='menubar' type='WowMenuBar' visible='1' window=':WowApp_RosterWindow'}
 :WowApp.splitter_QSplitter	{name='splitter' type='QSplitter' visible='1' window=':WowApp_RosterWindow'}
 :WowApp.stackedWidget_QStackedWidget	{name='stackedWidget' type='QStackedWidget' visible='1' window=':WowApp_RosterWindow'}
+:WowApp.statusPanel_StyledWidget	{name='statusPanel' type='StyledWidget' visible='1' window=':WowApp_RosterWindow'}
 :WowApp_QMenu	{type='QMenu' unnamed='1' visible='1' window=':WowApp_RosterWindow'}
 :WowApp_RosterWindow	{name='RosterWindow' type='RosterWindow' visible='1' windowTitle='WowApp'}
 :_SystemTray	{type='SystemTray'}
@@ -71,6 +78,7 @@
 :activityStackedWidget.activityScrollArea_QScrollArea	{container=':contentStackedWidget.activityStackedWidget_QStackedWidget' name='activityScrollArea' type='QScrollArea' visible='1'}
 :activityTreeView.EARLIER ACTIVITY_QModelIndex	{column='0' container=':activityScrollArea.activityTreeView_ActivityTreeView' text='EARLIER ACTIVITY' type='QModelIndex'}
 :activityTreeView.TODAY_QModelIndex	{column='0' container=':activityScrollArea.activityTreeView_ActivityTreeView' text='TODAY' type='QModelIndex'}
+:availableContactsList.plcata2002 a_QModelIndex	{container=':Add to Conference.availableContactsList_ContactListView' text='plcata2002 a' type='QModelIndex'}
 :cata100 ionut100_ChatWindow	{title='cata100 ionut100' type='ChatWindow' unnamed='1' visible='true'}
 :chatsStackedWidget_QWindowContainer	{container=':contentStackedWidget.chatsStackedWidget_QStackedWidget' type='QWindowContainer' unnamed='1' visible='1'}
 :contactsList_QScrollBar	{container=':Choose Contact.contactsList_ContactListView' type='QScrollBar' unnamed='1' visible='1'}
@@ -112,6 +120,7 @@
 :detailsWidget.propertyTreeView_QTreeView	{container=':profileScrollArea.detailsWidget_QStackedWidget' name='propertyTreeView' type='QTreeView' visible='1'}
 :listView.delegateLoader_Loader	{container=':B.listView_ListView' id='delegateLoader' occurrence='3' type='Loader' unnamed='1' visible='true'}
 :listView.delegateLoader_Loader_10	{container=':plcata2001 a.listView_ListView' id='delegateLoader' occurrence='9' type='Loader' unnamed='1' visible='true'}
+:listView.delegateLoader_Loader_11	{container=':plcata2001 a, plcata2002 a.listView_ListView' id='delegateLoader' type='Loader' unnamed='1' visible='true'}
 :listView.delegateLoader_Loader_2	{container=':B.listView_ListView' id='delegateLoader' type='Loader' unnamed='1' visible='true'}
 :listView.delegateLoader_Loader_3	{container=':B.listView_ListView' id='delegateLoader' occurrence='10' type='Loader' unnamed='1' visible='true'}
 :listView.delegateLoader_Loader_4	{container=':B.listView_ListView' id='delegateLoader' occurrence='8' type='Loader' unnamed='1' visible='true'}
@@ -121,9 +130,15 @@
 :listView.delegateLoader_Loader_8	{container=':plcata2001 a.listView_ListView' id='delegateLoader' type='Loader' unnamed='1' visible='true'}
 :listView.delegateLoader_Loader_9	{container=':plcata2001 a.listView_ListView' id='delegateLoader' occurrence='8' type='Loader' unnamed='1' visible='true'}
 :mainStack.Status_QGroupBox	{container=':Preferences.mainStack_QStackedWidget' name='groupBox_11' title='Status' type='QGroupBox' visible='0'}
+:pl cata1000.Go Private_IconButton	{container=':pl cata1000_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}
+:pl cata1000.OK_Text	{container=':pl cata1000_ChatWindow' id='buttonText' text='OK' type='Text' unnamed='1' visible='true'}
+:pl cata1000.You can't start PM_Text	{container=':pl cata1000_ChatWindow' id='title' text='You can\\'t start PM' type='Text' unnamed='1' visible='true'}
+:pl cata1000_ChatWindow	{title='pl cata1000' type='ChatWindow' unnamed='1' visible='true'}
 :plcata2000 a.Go Private_IconButton	{container=':plcata2000 a_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}
 :plcata2000 a.cvtaTextEditor_TextEditor	{container=':plcata2000 a_ChatWindow' objectName='cvtaTextEditor' type='TextEditor' visible='true'}
 :plcata2000 a_ChatWindow	{title='plcata2000 a' type='ChatWindow' unnamed='1' visible='true'}
+:plcata2001 a, plcata2002 a.listView_ListView	{container=':plcata2001 a, plcata2002 a_ChatWindow' id='listView' occurrence='2' type='ListView' unnamed='1' visible='true'}
+:plcata2001 a, plcata2002 a_ChatWindow	{title='plcata2001 a, plcata2002 a' type='ChatWindow' unnamed='1' visible='true'}
 :plcata2001 a.<html>You are now in a Private Chat.<br/><br/>All messages, images, videos and files shared in a Private Chat are secure and disappear once this mode is turned off or after 30 minutes of inactivity.<br/><br/>Enjoy full privacy: no trace of this conversation is stored on any device as well as our servers.</html>_Text	{container=':plcata2001 a_ChatWindow' text='<html>You are now in a Private Chat.<br/><br/>All messages, images, videos and files shared in a Private Chat are secure and disappear once this mode is turned off or after 30 minutes of inactivity.<br/><br/>Enjoy full privacy: no trace of this conversation is stored on any device as well as our servers.</html>' type='Text' unnamed='1' visible='true'}
 :plcata2001 a.Accept_Text	{container=':plcata2001 a_ChatWindow' id='buttonText' text='Accept' type='Text' unnamed='1' visible='true'}
 :plcata2001 a.Go Private_IconButton	{container=':plcata2001 a_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}
@@ -137,6 +152,7 @@
 :plcata2001 a.ctDockButton_IconButton_2	{container=':plcata2001 a_ChatWindow' objectName='ctDockButton' occurrence='2' type='IconButton' visible='true'}
 :plcata2001 a.ctDockButton_IconButton_3	{container=':plcata2001 a_ChatWindow' objectName='ctDockButton' type='IconButton' visible='true'}
 :plcata2001 a.ctPlusButton_IconButton	{container=':plcata2001 a_ChatWindow' objectName='ctPlusButton' type='IconButton' visible='true'}
+:plcata2001 a.ctPlusButton_IconButton_2	{container=':plcata2001 a_ChatWindow' objectName='ctPlusButton' occurrence='2' type='IconButton' visible='true'}
 :plcata2001 a.cvtaTextEditor_TextEditor	{container=':plcata2001 a_ChatWindow' objectName='cvtaTextEditor' type='TextEditor' visible='true'}
 :plcata2001 a.listView_ListView	{container=':plcata2001 a_ChatWindow' id='listView' type='ListView' unnamed='1' visible='true'}
 :plcata2001 a.messageBox_OverlayMessageBox	{container=':plcata2001 a_ChatWindow' id='messageBox' radius='0' type='OverlayMessageBox' unnamed='1' visible='true'}
@@ -150,6 +166,7 @@
 :plcata2001 a_Rectangle	{container=':plcata2001 a_ChatWindow' occurrence='12' radius='0' type='Rectangle' unnamed='1' visible='true'}
 :profileScrollArea.detailsWidget_QStackedWidget	{container=':Contact Profile.profileScrollArea_QScrollArea' name='detailsWidget' type='QStackedWidget' visible='1'}
 :propertyTreeView.stackedWidget_QStackedWidget	{container=':detailsWidget.propertyTreeView_QTreeView' name='stackedWidget' occurrence='5' type='QStackedWidget' visible='1'}
+:rosterScrollArea.Accept_CustomPushButton	{container=':contentStackedWidget.rosterScrollArea_QScrollArea' name='acceptButton' text='Accept' type='CustomPushButton' visible='1'}
 :rosterScrollArea.rosterTreeView_RosterTreeView	{container=':contentStackedWidget.rosterScrollArea_QScrollArea' name='rosterTreeView' type='RosterTreeView' visible='1'}
 :rosterScrollArea_QScrollBar	{container=':contentStackedWidget.rosterScrollArea_QScrollArea' type='QScrollBar' unnamed='1' visible='1'}
 :stackedWidget.Female_LinkLabel	{container=':propertyTreeView.stackedWidget_QStackedWidget' name='textLabel' text='Female' type='LinkLabel' visible='1'}

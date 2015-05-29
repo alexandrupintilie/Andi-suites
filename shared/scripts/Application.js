@@ -17,21 +17,21 @@ function Application() {
     this.launch = function() {
         snooze(3);
         startApplication("WowApp -noupdate");
+       
 
 
     }
     
-    
-    //LOGIN
-    this.enterCredentials = function(nume,parola) {
-        doubleClick(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), 107, 19, 0, Qt.LeftButton);
-        snooze(3);
-        type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), "<Backspace>");
-        type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), "wooow6");
-        type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "<Tab>");
-        type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "123456");
-        clickButton(waitForObject(":contentStackedWidget.Sign in_CustomFocusButton"));
-    }
+//    //LOGIN
+//    this.enterCredentials = function(nume,parola) {
+//        doubleClick(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), 107, 19, 0, Qt.LeftButton);
+//        snooze(3);
+//        type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), "<Backspace>");
+//        type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), "wooow6");
+//        type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "<Tab>");
+//        type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "123456");
+//        clickButton(waitForObject(":contentStackedWidget.Sign in_CustomFocusButton"));
+//    }
     
     //LOGIN WAS SUCCESSFULL
     
@@ -44,14 +44,12 @@ function Application() {
         }
     }
     
-
     //IN ROSTER
     this.inRoster = function() {
         snooze(2);
         clickButton(waitForObject("{name='contactsRadioButton' text='Contacts' type='TabRadioButton' visible='1' window=':WowApp_RosterWindow'}"));
     }
-    
-    
+      
     //IN ROSTER CHECK (GIVEN I AM LOGGED IN)
     this.inRosterCheck = function() {
         try {
@@ -80,26 +78,26 @@ function Application() {
         clickButton(waitForObject(":WowApp.Activity_TabRadioButton"));
     }
         
-    //OPEN GCB
-    this.doubleclickGCB = function(nume) {
-        snooze(2);
-        waitForObjectItem("{column='0' container=':activityTreeView.TODAY_QModelIndex' text='B' type='QModelIndex'}", "TODAY.B");
-        clickItem(":activityScrollArea.activityTreeView_ActivityTreeView", "TODAY.B", 135, 15, 0, Qt.LeftButton);
-        waitForObjectItem("{column='0' container=':activityTreeView.TODAY_QModelIndex' text='B' type='QModelIndex'}", "TODAY.B");
-        doubleClickItem(":activityScrollArea.activityTreeView_ActivityTreeView", "TODAY.B", 135, 15, 0, Qt.LeftButton);
-    }
-    
-    //CHECK FOR GCB
-    this.visibleGCB = function() {
-        var retValue;
-        try {
-            waitForObject("{title='B' type='ChatWindow' unnamed='1' visible='true'}");
-            retValue=true;
-        } catch (err) {
-            retValue=false;
-        }
-        return retValue;
-    }
+//    //OPEN GCB
+//    this.doubleclickGCB = function(nume) {
+//        snooze(2);
+//        waitForObjectItem("{column='0' container=':activityTreeView.TODAY_QModelIndex' text='B' type='QModelIndex'}", "TODAY.B");
+//        clickItem(":activityScrollArea.activityTreeView_ActivityTreeView", "TODAY.B", 135, 15, 0, Qt.LeftButton);
+//        waitForObjectItem("{column='0' container=':activityTreeView.TODAY_QModelIndex' text='B' type='QModelIndex'}", "TODAY.B");
+//        doubleClickItem(":activityScrollArea.activityTreeView_ActivityTreeView", "TODAY.B", 135, 15, 0, Qt.LeftButton);
+//    }
+//    
+//    //CHECK FOR GCB
+//    this.visibleGCB = function() {
+//        var retValue;
+//        try {
+//            waitForObject("{title='B' type='ChatWindow' unnamed='1' visible='true'}");
+//            retValue=true;
+//        } catch (err) {
+//            retValue=false;
+//        }
+//        return retValue;
+//    }
  
     //SEND CONTACT INFO
     
@@ -114,25 +112,25 @@ function Application() {
     
     }
     
-    //CHECK IF CONTACT IS VISIBLE
-    
-    this.compareOne = function() {
-        var retValue;
-        try {
-            waitFor("object.exists(':delegateLoader.wooow22 a_Text_2')", 20000);
-            retValue=true;
-        } catch (err) {
-            retValue=false;
-        }
-        return retValue;
-     }
-    
-    //CLOSE CHAT WINDOW B
-     this.closeChat = function() {
-         waitForObject("{title='B' type='ChatWindow' unnamed='1' visible='true'}")
-         type(waitForObject("{title='B' type='ChatWindow' unnamed='1' visible='true'}"), "<Esc>");
-            
-     }
+//    //CHECK IF CONTACT IS VISIBLE
+//    
+//    this.compareOne = function() {
+//        var retValue;
+//        try {
+//            waitFor("object.exists(':delegateLoader.wooow22 a_Text_2')", 20000);
+//            retValue=true;
+//        } catch (err) {
+//            retValue=false;
+//        }
+//        return retValue;
+//     }
+//    
+//    //CLOSE CHAT WINDOW B
+//     this.closeChat = function() {
+//         waitForObject("{title='B' type='ChatWindow' unnamed='1' visible='true'}")
+//         type(waitForObject("{title='B' type='ChatWindow' unnamed='1' visible='true'}"), "<Esc>");
+//            
+//     }
      
      //PRE-LIVE PM FUNCTIONS
      //LOGIN
@@ -153,6 +151,14 @@ function Application() {
          type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), "pl.cata2001");
          type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "<Tab>");
          type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "forcet2001");
+         type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "<Return>");
+     }
+     
+     this.enterCredentialsPM3 = function(nume,parola) {
+         type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), "<Backspace>");
+         type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_3"), "pl.cata2002");
+         type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "<Tab>");
+         type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "forcet2002");
          type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit"), "<Return>");
      }
      
@@ -456,7 +462,7 @@ function Application() {
                 snooze(2);
                 nativeType("<Command+Shift+g>");
                 snooze(2);
-                nativeType("/Users/alexandru/Pictures/tree.jpeg");
+                nativeType("/Users/alexandru/Pictures/tree");
                 snooze(2);
                 nativeType("<Return>");
                 snooze(2);
@@ -515,9 +521,106 @@ function Application() {
     } catch (err) {
             test.fail("Contact info not received") 
     }
-//  snooze(2);
 }
+    
+    //OPEN ADD CONTACTS WINDOW
+    this.addContactWindow = function() {   
+        var button = waitForObject("{container=':plcata2001 a_ChatWindow' objectName='ctPlusButton' type='IconButton' visible='true'}");
+//        mouseClick(button, 22, 12, Qt.LeftButton);
+        button.mouseClick;
+        snooze(2);
+        button.createConferenceAction();
+       // button.sendContactAction();
+        snooze(2);
+        //button.createConferenceAction();
+    }
+    
+    //ADD CONTACT TO CREATE GROUP CHAT
+    this.addContact = function() {
+//        type(waitForObject(":Add to Conference.searchLineEdit_SearchLineEdit"), "plcata2002 a");
+//        waitForObjectItem(":Add to Conference.availableContactsList_ContactListView", "plcata2002 a");
+//        clickItem(":Add to Conference.availableContactsList_ContactListView", "plcata2002 a", 10, 23, 0, Qt.LeftButton);
+//        clickButton(waitForObject(":Add to Conference.Add to Conference_CustomFocusButton"));
+        var toggle = clickItem(":Add to Conference.availableContactsList_ContactListView", "plcata2002 a", 12, 27, 0, Qt.LeftButton);
 
+        try {
+          var retValue
+            toggle.waitForObject("{container=':Add to Conference.availableContactsList_ContactListView' text='plcata2002 a' type='QModelIndex'}");
+            retValue=true;
+        } catch(err) {
+            retValue=false;
+        }
+          do {
+            mouseClick(waitForObject(":Add to Conference.Add to Conference_CustomFocusButton"));
+        }
+          while (retValue == true);      
+
+ } 
+    //GROUP CHAT CREATED CHECK
+    this.addContactCheck = function() {
+        try {
+            findObject("{container=':plcata2001 a, plcata2002 a_ChatWindow' id='label' text='plcata2001 a, plcata2002 a' type='Text' unnamed='1' visible='true'}");      
+            test.pass("Group chat created")
+    } catch (err) {
+            test.fail("Group chat creation failed") 
+    }
+}
+        
+    //CHECK THAT NO PM BUTTON IS AVAILABLE
+    this.noPMbuttonCheck = function() {
+        try {
+            findObject("{container=':plcata2001 a_ChatWindow' objectName='privateButton' text='Private is ON' type='IconButton' visible='true'}");
+            test.fail("PM button was found!")
+        } catch (err) {
+            test.pass("PM button is not available in Group chat")
+        }
+      
+    }
+    
+    //OPEN CHAT WINDOW WITH CONTACT LAST SEEN
+    this.openChatLastSeen = function() {
+        waitForObjectItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.pl cata1000");
+        doubleClickItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.pl cata1000", 112, 19, 0, Qt.LeftButton);
+    }
+    
+    //ATTEMPT SENDING PM INVITE TO CONTACT LAST SEEN
+    
+    this.clickPMbuttonLastSeen = function() {
+        mouseClick(waitForObject(":pl cata1000.Go Private_IconButton"), 39, 19, Qt.LeftButton);
+    }
+    
+    //CHECK THAT PM INVITE WAS NO SENT
+    
+    this.checkPMLastSeen = function() {
+        try {
+            findObject("{container=':pl cata1000_ChatWindow' id='title' text='You can\'t start PM' type='Text' unnamed='1' visible='true'}");
+            test.pass("PM invite could not be sent")
+        } catch(err) {
+            test.fail("PM invite was sent!")
+    }
+            mouseClick(waitForObject(":pl cata1000.OK_Text"), 14, 9, Qt.LeftButton);
+    }
+        
+    //CLOSE WINDOW WITH LAST SEEN CONTACT (PL CATA1000)
+    this.closeLastSeen = function() {
+        closeWindow(":pl cata1000_ChatWindow")
+    }
+    
+    //CLOSE GROUP CHAT FROM PL.CATA2000
+    this.closeGC1 = function() {
+        closeWindow(":plcata2001 a, plcata2002 a_ChatWindow");
+    }
+    
+//    //CLOSE GROUP CHAT FROM PL.CATA2001
+//    this.closeGC2 = function() {
+//        closeWindow("{container=':plcata2000 a, plcata2002 a_ChatWindow' id='label' text='plcata2000 a, plcata2002 a' type='Text' unnamed='1' visible='true'}");
+//    }
+//    
+//    //CLOSE GROUP CHAT FROM PL.CATA2000
+//    this.closeGC3 = function() {
+//        closeWindow("{container=':plcata2000 a, plcata2001 a_ChatWindow' id='label' text='plcata2000 a, plcata2001 a' type='Text' unnamed='1' visible='true'}");
+//    }
+    
     //NO ACTIVITY ENTRY FOR PM CHECK
     this.noActivityPM = function() {
         try {
