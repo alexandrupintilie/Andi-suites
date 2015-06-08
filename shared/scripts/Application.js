@@ -165,7 +165,7 @@ function Application() {
      //OPEN CHAT WINDOW WITH CONTACT B
      this.openChatPM = function() {
          waitForObjectItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.plcata2001 a");
-         doubleClickItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.plcata2001 a", 112, 19, 0, Qt.LeftButton);
+         doubleClickItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.plcata2001 a", 124, 26, 0, Qt.LeftButton);
         }
   
 
@@ -226,7 +226,7 @@ function Application() {
      //CANCEL PM REQUEST FROM SENDER
         
         this.cancelPMrequest = function() {
-            mouseClick(waitForObject("{container=':plcata2000 a_ChatWindow' id='cancelButton' radius='4' text='Cancel' type='Button' unnamed='1' visible='true'}"));
+            mouseClick(waitForObject("{container=':plcata2000 a_ChatWindow' id='cancelButton' radius='4' type='Button' unnamed='1' visible='true'}"));
         }
         
      //CHECK IF PM REQUEST IS CANCELED
@@ -267,13 +267,13 @@ function Application() {
          
       //ACCEPT INVITE ON WIN (CONTACT B)
          this.acceptPMinviteWin = function() {
-             mouseClick(waitForObject("{container=':plcata2000 a_ChatWindow' id='acceptButton' radius='4' text='Accept' type='Button' unnamed='1' visible='true'}"));
+             mouseClick(waitForObject("{container=':plcata2000 a_ChatWindow' id='acceptButton' radius='4' type='Button' unnamed='1' visible='true'}"));
            
          }
          
       //ACCEPT PM INVITE ON MAC
          this.acceptMac = function() {
-             mouseClick(waitForObject(":plcata2001 a.Accept_Text"), 25, 9, Qt.LeftButton);
+             mouseClick(waitForObject("{container=':plcata2001 a_ChatWindow' id='acceptButton' radius='4' type='Button' unnamed='1' visible='true'}"));
             
          }
          
@@ -516,7 +516,7 @@ function Application() {
     //CONTACT RECEIVED CHECK
     this.contactReceivedCheck = function() {
         try {
-            waitFor("object.exists(':delegateLoader.cata100 ionut100_Text')", 20000);         
+            waitForObject("{container=':listView.delegateLoader_Loader_8' id='nameText' text='cata100 ionut100' type='Text' unnamed='1' visible='true'}");         
             test.pass("Contact info received by contact")
     } catch (err) {
             test.fail("Contact info not received") 
@@ -526,13 +526,12 @@ function Application() {
     //OPEN ADD CONTACTS WINDOW
     this.addContactWindow = function() {   
         var button = waitForObject("{container=':plcata2001 a_ChatWindow' objectName='ctPlusButton' type='IconButton' visible='true'}");
-//        mouseClick(button, 22, 12, Qt.LeftButton);
-        button.mouseClick;
-        snooze(2);
+        snooze(3);
+        mouseClick(button, 22, 21, Qt.LeftButton);
+//        button.mouseClick;
+        snooze(3);
         button.createConferenceAction();
-       // button.sendContactAction();
-        snooze(2);
-        //button.createConferenceAction();
+        snooze(3);
     }
     
     //ADD CONTACT TO CREATE GROUP CHAT
@@ -586,26 +585,117 @@ function Application() {
     //ATTEMPT SENDING PM INVITE TO CONTACT LAST SEEN
     
     this.clickPMbuttonLastSeen = function() {
-        mouseClick(waitForObject(":pl cata1000.Go Private_IconButton"), 39, 19, Qt.LeftButton);
-    }
-    
-    //CHECK THAT PM INVITE WAS NO SENT
+        var toggle = waitForObject("{container=':pl cata1000_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}")
+
+        try {
+          var retValue
+            waitForObject("{container=':pl cata1000_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}");
+            retValue=true;
+        } catch(err) {
+            retValue=false;
+        }
+          do {
+            mouseClick(toggle, 39, 19, Qt.LeftButton);
+            { break; }
+        }
+          while (retValue == true);      
+
+ } 
+      
+    //CHECK THAT PM INVITE WAS NO SENT TO LAST SEEN CONTACT
     
     this.checkPMLastSeen = function() {
         try {
-            findObject("{container=':pl cata1000_ChatWindow' id='title' text='You can\'t start PM' type='Text' unnamed='1' visible='true'}");
+            findObject("{container=':pl cata1000_ChatWindow' id='title' text='Contact is offline' type='Text' unnamed='1' visible='true'}");
             test.pass("PM invite could not be sent")
         } catch(err) {
             test.fail("PM invite was sent!")
     }
-            mouseClick(waitForObject(":pl cata1000.OK_Text"), 14, 9, Qt.LeftButton);
-    }
+  }
+    
+    //CLICK OK PM INVITE LAST SEEN CONTACT
+    this.clickOKlastSeen = function() {
+        try {
+            var retValue;
+            findObject(":pl cata1000.OK_Text");
+            findObject(":pl cata1000.OK_Text_2");
+            findObject(":pl cata1000.OK_Text_3");
+            retValue=true;
+        } catch (err) {
+            retValue=false;
+       }
+        do {
+          mouseClick("{container=':pl cata1000_ChatWindow' id='acceptButton' radius='4' type='Button' unnamed='1' visible='true'}");
+      }
+          while (retValue == true);
+ }
         
     //CLOSE WINDOW WITH LAST SEEN CONTACT (PL CATA1000)
     this.closeLastSeen = function() {
         closeWindow(":pl cata1000_ChatWindow")
     }
     
+    //OPEN CHAT WINDOW WITH OFFLINE CONTACT
+    this.openOfflineContact = function() {
+        waitForObjectItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.plcata2004 a");
+        doubleClickItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.plcata2004 a", 137, 24, 0, Qt.LeftButton);
+    }
+    
+    //ATTEMPT SENDING PM INVITE TO OFFLINE CONTACT
+    
+    this.clickPMbuttonOffline = function() {
+        mouseClick(waitForObject(":plcata2004 a.Go Private_IconButton"), 39, 19, Qt.LeftButton);
+    }
+    
+    //CHECK THAT PM INVITE WAS NO SENT TO OFFLINE CONTACT
+    
+    this.checkPMoffline = function() {
+        try {
+            findObject("{container=':plcata2004 a_ChatWindow' id='title' text='Contact is offline' type='Text' unnamed='1' visible='true'}");
+            test.pass("PM invite could not be sent")
+        } catch(err) {
+            test.fail("PM invite was sent!")
+        }
+   }
+    
+    
+    //CLICK OK PM INVITE OFFLINE CONTACT
+    this.clickOKoffline = function() {
+        try {
+            var retValue;
+            findObject(":plcata2004 a.OK_Text");
+            findObject(":plcata2004 a.OK_Text_2");
+            findObject(":plcata2004 a.OK_Text_3");
+            retValue=true;
+        } catch (err) {
+            retValue=false;
+       }
+        do {
+          mouseClick("{container=':plcata2004 a_ChatWindow' id='acceptButton' radius='4' type='Button' unnamed='1' visible='true'}");
+      }
+          while (retValue == true);
+ }
+    
+    //CHECK THAT CHAT WINDOW IS NOT BLANK
+    this.checkChatBlank = function() {
+        try {
+            waitForObject("{container=':plcata2001 a_ChatWindow' id='textArea' source='qrc:/chat/common/lower_panel_chat_gray_gradient_4x86.png' type='ChatViewTextArea' unnamed='1' visible='true'}");
+            test.pass("Chat window is not blank")
+        } catch(err) {
+            test.fail("Chat window is blank")
+        }
+    }
+    
+    //CLOSE WINDOW WITH LAST SEEN CONTACT (PL CATA2004 a)
+    this.closeOffline = function() {
+        closeWindow(":plcata2004 a_ChatWindow")
+    }
+    
+   //CLOSE WINDOW WITH CONTACT B
+   this.closeB = function() {
+       closeWindow(":plcata2011 a_ChatWindow")
+   }
+   
     //CLOSE GROUP CHAT FROM PL.CATA2000
     this.closeGC1 = function() {
         closeWindow(":plcata2001 a, plcata2002 a_ChatWindow");

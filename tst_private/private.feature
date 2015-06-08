@@ -9,13 +9,13 @@ Then the PM request is received by contact B
 
 Scenario: Cancel a PM request
 Given the PM pop-up is available on screen
-When I click Cancel
+When I click NO
 Then the invitation is dismissed for both users
 
 Scenario: Accept a PM request
 Given I am logged in with account A
 When I receive a PM request pop-up from contact B
-And I click Accept
+And I click YES
 Then the PM is initialized
 
 Scenario: Exit Private mode

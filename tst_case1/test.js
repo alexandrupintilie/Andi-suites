@@ -1,39 +1,13 @@
 function main() {
     startApplication("WowApp -noupdate");
-    mouseClick(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_2"), 192, 20, 0, Qt.LeftButton);
+    mouseClick(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_2"), 176, 2, 0, Qt.LeftButton);
+    mouseClick(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_2"), 149, 9, 0, Qt.LeftButton);
     type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_2"), "forcet2000");
     type(waitForObject(":contentStackedWidget.fieldLineEdit_QLineEdit_2"), "<Return>");
-    mouseClick(waitForObject(":plcata2001 a.acceptButton_Button"), 36, 6, Qt.LeftButton);
-  
-    snooze(3);
+    waitForObjectItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.plcata2001 a");
+    doubleClickItem(":rosterScrollArea.rosterTreeView_RosterTreeView", "FRIENDS.plcata2001 a", 119, 18, 0, Qt.LeftButton);
     
-    try {
-      var retValue;
-
-      findObject(":plcata2001 a.ctDockButton_IconButton_3");
-      findObject(":plcata2001 a.ctDockButton_IconButton_2");
-      findObject(":plcata2001 a.ctDockButton_IconButton_1");
-      findObject(":plcata2001 a.ctDockButton_IconButton");
-      retValue=true;
-  } catch (err) {
-      retValue=false;
- }
-
-
-  snooze(3);
-  
-  do {
-      mouseClick("{container=':plcata2001 a_ChatWindow' objectName='ctDockButton' type='IconButton' visible='true'}");
+    {container=':listView.delegateLoader_Loader_8' id='itemContent' radius='0' type='Rectangle' unnamed='1' visible='true'}
+    {container=':listView.delegateLoader_Loader_8' id='nameText' text='cata100 ionut100' type='Text' unnamed='1' visible='true'}
 }
-    while (retValue == true);
-  
-  snooze(3);
-
-}
-
-    
-
-
-
-    
 

@@ -32,7 +32,7 @@ scenario1.When("I open a single chat from roster", function () {
 
 scenario1.And("I add a contact to create a Group Chat", function () {
     this.scenario.application.addContactWindow();
-    snooze(3);
+    snooze(5);
     this.scenario.application.addContact();
     snooze(3);
     this.scenario.application.addContactCheck();
@@ -63,57 +63,89 @@ scenario2.When("I open a chat window with an user that is Last seen", function (
 
 scenario2.And("I click the PM button",function() {
     this.scenario.application.clickPMbuttonLastSeen();
-    snooze(3);
+    snooze(5);
     
 });
 
 scenario2.Then("the PM invitation is not sent", function () {
     this.scenario.application.checkPMLastSeen();
+    snooze(5);
+    this.scenario.application.clickOKlastSeen();
     snooze(3);
     this.scenario.application.closeLastSeen();
     snooze(3);
+    
 });
 
 // Scenario 3
 var scenario3 = feature.addScenario("Sending PM invitations to users with Offline - TDT-3537");
 
 scenario3.Given("I am logged in", function () {
-    test.log("Implement me!");
+    this.scenario.application = new Application();
+    this.scenario.application.loginWasSuccessfull();
+    
 });
 
 scenario3.When("I open a chat window with an user that is Offline", function () {
-    test.log("Implement me!");
+    this.scenario.application.openOfflineContact();
+    snooze(3);
+    
 });
 
-scenario3.Then("the PM button is disabled", function () {
-    test.log("Implement me!");
+scenario3.And("I click the PM button",  function () {
+    this.scenario.application.clickPMbuttonOffline();
+    snooze(3);
+    
+});
+
+scenario3.Then("the PM invitation is not sent", function () {
+    this.scenario.application.checkPMoffline();
+    snooze(3);
+    this.scenario.application.clickOKoffline();
+    snooze(3);
+    this.scenario.application.closeOffline();
+    snooze(3);
+    
 });
 
 // Scenario 4
 var scenario4 = feature.addScenario("Chat window UI after closing it with PM invitation active - TDT-3482");
 
 scenario4.Given("I am logged in", function () {
-    test.log("Implement me!");
+    this.scenario.application = new Application();
+    this.scenario.application.loginWasSuccessfull();
+    
 });
 
 scenario4.When("I open a chat window with a contact", function () {
-    test.log("Implement me!");
+    this.scenario.application.openChatPM();
+    snooze(5);
+    
 });
 
 scenario4.And("I send him a PM invite", function () {
-    test.log("Implement me!");
+    this.scenario.application.clickPMbutton();
+    snooze(3);
+    this.scenario.application.PMinvitationIsReceivedA();
+    
 });
 
 scenario4.And("I close the window before he accepts", function () {
-    test.log("Implement me!");
+    this.scenario.application.closeB();
+    snooze(3);
+    
 });
 
 scenario4.And("I reopen the window", function () {
-    test.log("Implement me!");
+    this.scenario.application.openChatPM();
+    snooze(5);
+    
 });
 
-scenario4.Then("the chat UI is free of issues", function () {
-    test.log("Implement me!");
+scenario4.Then("the chat window UI is not blank", function () {
+    this.scenario.application.checkChatBlank();
+    snooze(3);
+    
 });
 
 // Scenario 5

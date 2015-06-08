@@ -133,6 +133,7 @@
 :pl cata1000.Go Private_IconButton	{container=':pl cata1000_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}
 :pl cata1000.OK_Text	{container=':pl cata1000_ChatWindow' id='buttonText' text='OK' type='Text' unnamed='1' visible='true'}
 :pl cata1000.You can't start PM_Text	{container=':pl cata1000_ChatWindow' id='title' text='You can\\'t start PM' type='Text' unnamed='1' visible='true'}
+:pl cata1000.messageBox_OverlayMessageBox	{container=':pl cata1000_ChatWindow' id='messageBox' radius='0' type='OverlayMessageBox' unnamed='1' visible='true'}
 :pl cata1000_ChatWindow	{title='pl cata1000' type='ChatWindow' unnamed='1' visible='true'}
 :plcata2000 a.Go Private_IconButton	{container=':plcata2000 a_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}
 :plcata2000 a.cvtaTextEditor_TextEditor	{container=':plcata2000 a_ChatWindow' objectName='cvtaTextEditor' type='TextEditor' visible='true'}
@@ -164,6 +165,11 @@
 :plcata2001 a_ChatWindow_2	{container=':chatsStackedWidget_QWindowContainer' title='plcata2001 a' type='ChatWindow' unnamed='1' visible='true'}
 :plcata2001 a_QTipLabel	{name='qtooltip_label' text='plcata2001 a' type='QTipLabel' visible='1'}
 :plcata2001 a_Rectangle	{container=':plcata2001 a_ChatWindow' occurrence='12' radius='0' type='Rectangle' unnamed='1' visible='true'}
+:plcata2004 a.Go Private_IconButton	{container=':plcata2004 a_ChatWindow' objectName='privateButton' text='Go Private' type='IconButton' visible='true'}
+:plcata2004 a.OK_Text	{container=':plcata2004 a_ChatWindow' id='acceptButton' radius='4' type='Button' unnamed='1' visible='true'}
+:plcata2004 a.OK_Text_2	{container=':plcata2004 a_ChatWindow' id='buttonText' text='OK' type='Text' unnamed='1' visible='true'}
+:plcata2004 a.acceptButton_Button	{container=':plcata2004 a_ChatWindow' id='acceptButton' radius='4' type='Button' unnamed='1' visible='true'}
+:plcata2004 a_ChatWindow	{title='plcata2004 a' type='ChatWindow' unnamed='1' visible='true'}
 :profileScrollArea.detailsWidget_QStackedWidget	{container=':Contact Profile.profileScrollArea_QScrollArea' name='detailsWidget' type='QStackedWidget' visible='1'}
 :propertyTreeView.stackedWidget_QStackedWidget	{container=':detailsWidget.propertyTreeView_QTreeView' name='stackedWidget' occurrence='5' type='QStackedWidget' visible='1'}
 :rosterScrollArea.Accept_CustomPushButton	{container=':contentStackedWidget.rosterScrollArea_QScrollArea' name='acceptButton' text='Accept' type='CustomPushButton' visible='1'}

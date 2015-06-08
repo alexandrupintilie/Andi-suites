@@ -15,7 +15,8 @@ Then the PM invitation is not sent
 Scenario: Sending PM invitations to users with Offline - TDT-3537
 Given I am logged in
 When I open a chat window with an user that is Offline
-Then the PM button is disabled
+And I click the PM button
+Then the PM invitation is not sent
 
 Scenario: Chat window UI after closing it with PM invitation active - TDT-3482
 Given I am logged in
@@ -23,7 +24,7 @@ When I open a chat window with a contact
 And I send him a PM invite
 And I close the window before he accepts
 And I reopen the window
-Then the chat UI is free of issues
+Then the chat window UI is not blank
 
 Scenario: Chat tray notifications for PM are ambiguous - TDT-3431
 Given I am in PM with a contact

@@ -57,7 +57,7 @@ scenario2.Given("the PM pop-up is available on screen", function () {
     
 });
 
-scenario2.When("I click Cancel", function () {
+scenario2.When("I click NO", function () {
     this.scenario.application.cancelPMrequest();
     snooze(4);
     
@@ -91,7 +91,7 @@ scenario3.When("I receive a PM request pop-up from contact B", function () {
     
 });
 
-scenario3.And("I click Accept", function () {
+scenario3.And("I click YES", function () {
     snooze(4);
     this.scenario.application.acceptMac();
     
